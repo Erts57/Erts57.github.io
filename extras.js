@@ -364,57 +364,33 @@ class Extras {
             }
         }
     }
-    boolBlock({
-        MENU
-    }) {
-        if (MENU == "" || MENU == 0 || MENU == null || MENU == false || MENU.toLowerCase() == "false" || MENU == "f" || MENU == "0") {
+    boolBlock({MENU}) {
+        if (MENU == "" || MENU == 0 || MENU == null || MENU == false || MENU.toString().toLowerCase() == "false" || MENU.toString().toLowerCase() == "f" || MENU.toString() == "0" || MENU <= 0) {
             return false;
         } else {
             return true;
         }
     }
-    ternaryBlock({
-        C,
-        T,
-        E
-    }) {
+    ternaryBlock({C,T,E}) {
         return C ? T : E;
     }
-    substringBlock({
-        F,
-        S,
-        T
-    }) {
+    substringBlock({F,S,T}) {
         return T.substring(F - 1, S);
     }
-    softReplace({
-        O,
-        N,
-        T
-    }) {
+    softReplace({O,N,T}) {
         return T.toString().replace(O, N);
     }
-    startEndWithBlock({
-        T,
-        MENU,
-        L
-    }) {
+    startEndWithBlock({T,MENU,L}) {
         if (MENU == "starts") {
             return T.startsWith(L);
         } else if (MENU == "ends") {
             return T.endsWith(L);
         }
     }
-    searchBlock({
-        I,
-        T
-    }) {
-        return T.search(T) + 1;
+    searchBlock({I,T}) {
+        return T.search(I) + 1;
     }
-    toCaseBlock({
-        T,
-        MENU
-    }) {
+    toCaseBlock({T,MENU}) {
         if (MENU == "UPPERCASE") {
             return T.toUpperCase();
         } else if (MENU == "lowercase") {
@@ -431,20 +407,13 @@ class Extras {
     microBlock() {
         return 0.000001;
     }
-    charCodeBlock({
-        I,
-        T
-    }) {
+    charCodeBlock({I,T}) {
         return T.charCodeAt(I - 1);
     }
-    charCodeToBlock({
-        C
-    }) {
+    charCodeToBlock({C}) {
         return String.fromCharCode(C);
     }
-    nanBlock({
-        V
-    }) {
+    nanBlock({V}) {
         return isNaN(V);
     }
     msBlock() {
@@ -453,23 +422,15 @@ class Extras {
     abcBlock() {
         return abcs.toString();
     }
-    strictReplaceBlock({
-        O,
-        N,
-        T
-    }) {
+    strictReplaceBlock({O,N,T}) {
         return T.toString().replace(new RegExp(O, 'gi'), N);
     }
-    trimBlock({
-        T
-    }) {
+    trimBlock({T}) {
         return T.trim();
     }
-    fetchHTML({
-        W
-    }) {
+    /*fetchHTML({W}) {
         return fetch(W).then(res => res.text())
             .catch(err => '');
-    }
+    }*/
 }
 Scratch.extensions.register(new Extras());
