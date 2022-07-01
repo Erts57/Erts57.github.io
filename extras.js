@@ -43,7 +43,7 @@ class Extras {
                     }
                 },
                 {
-                    opcode: "ternary",
+                    opcode: "ternaryBlock",
 
                     blockType: Scratch.BlockType.REPORTER,
 
@@ -62,6 +62,56 @@ class Extras {
                             type: Scratch.ArgumentType.STRING,
 
                             defaultValue: "that"
+                        }
+                    }
+                },
+                {
+                    opcode: "substringBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "letters [F] to [S] of [T]",
+
+                    arguments: {
+                        F: {
+                            type: Scratch.ArgumentType.NUMBER,
+
+                            defaultValue: 2
+                        },
+                        S: {
+                            type: Scratch.ArgumentType.NUMBER,
+
+                            defaultValue: 4
+                        },
+                        T: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "string"
+                        }
+                    }
+                },
+                {
+                    opcode: "softReplaceBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "replace [O] with [N] in [T]",
+
+                    arguments: {
+                        O: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "World"
+                        },
+                        N: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "Universe"
+                        },
+                        T: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "Hello World!"
                         }
                     }
                 }
@@ -85,6 +135,12 @@ class Extras {
     }
     ternaryBlock({C,T,E}) {
         return C ? T : E;
+    }
+    substringBlock({F,S,T}) {
+        return T.substring(F - 1, S);
+    }
+    softReplaceBlock({O,N,T}) {
+        return T.toString().replace(O, N);
     }
 }
 Scratch.extensions.register(new Extras());
