@@ -1,0 +1,13 @@
+{
+    "ip": "wss://BloopServer.erts75.repl.co",
+    "cloudlinkServer": "1.7.4",
+    "cloudlinkExtension": "B3.0",
+    "owner": "Erts57",
+    "MOTD": true,
+    "name": "Erts57's Server",
+    "password": "",
+    "host": 1,
+    "duplicates": false,
+    "chat": true,
+    "commands": true
+}
