@@ -24,7 +24,7 @@ class Extras {
                         MENU: {
                             type: Scratch.ArgumentType.NUMBER,
 
-                            menu: "BOOLEANS"
+                            menu: "booleans"
                         }
                     },
 
@@ -152,7 +152,7 @@ class Extras {
                         MENU: {
                             type: Scratch.ArgumentType.NUMBER,
 
-                            menu: "STARTEND"
+                            menu: "startend"
                         },
                         L: {
                             type: Scratch.ArgumentType.STRING,
@@ -201,7 +201,7 @@ class Extras {
                         MENU: {
                             type: Scratch.ArgumentType.NUMBER,
 
-                            menu: "CASES"
+                            menu: "cases"
                         }
                     },
 
@@ -214,7 +214,7 @@ class Extras {
 
                     text: "math PI",
 
-                    arguments: {},
+                    arguments: { },
 
                     func: "piBlock"
                 },
@@ -225,7 +225,7 @@ class Extras {
 
                     text: "micro",
 
-                    arguments: {},
+                    arguments: { },
 
                     func: "microBlock"
                 },
@@ -309,7 +309,7 @@ class Extras {
 
                     text: "current millisecond",
 
-                    arguments: {},
+                    arguments: { },
 
                     func: "msBlock"
                 },
@@ -320,7 +320,7 @@ class Extras {
 
                     text: "ABCs array",
 
-                    arguments: {},
+                    arguments: { },
 
                     func: "abcBlock"
                 },
@@ -344,13 +344,13 @@ class Extras {
             ],
 
             menus: {
-                STARTEND: {
+                startend: {
                     items: ["starts", "ends"]
                 },
-                CASES: {
+                cases: {
                     items: ["UPPERCASE", "lowercase", "camelCase", "Capitalize"]
                 },
-                BOOLEANS: {
+                booleans: {
                     items: ["true", "false"],
 
                     acceptReporters: true
