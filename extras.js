@@ -15,6 +15,9 @@ function capitalize(str) {
 }
 
 class Extras {
+    
+    constructor() { }
+    
     getInfo() {
         return {
             id: "extras",
@@ -24,11 +27,29 @@ class Extras {
             color2: "#7CB342",
             
             blocks: [
-                
+                {
+                    opcode: "boolBlock",
+
+                    blockType: Scratch.BlockType.BOOLEAN,
+
+                    text: "[MENU]",
+
+                    arguments: {
+                        MENU: {
+                            type: Scratch.ArgumentType.NUMBER,
+
+                            menu: "bools"
+                        }
+                    }
+                }
             ],
             
             menus: {
-                
+                bools: {
+                    items: ["true", "false"],
+
+                    acceptReporters: true
+                }
             }
         }
     }
