@@ -1,5 +1,5 @@
 var abcs = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-/*function camelize(str) {
+function camelize(str) {
     return str.replace(/\W+(.)/g, function(match, chr)
     {
         return chr.toUpperCase();
@@ -12,7 +12,7 @@ function capitalize(str) {
     
     }
     return arr.join(" ");
-}*/
+}
 
 class Extras {
     getInfo() {
@@ -33,3 +33,4 @@ class Extras {
         }
     }
 }
+Scratch.extensions.register(new Extras());
