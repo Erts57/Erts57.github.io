@@ -129,11 +129,10 @@ class Json {
             return err;
         }
     }
-    //https://sheeptester.github.io/javascripts/utilities.js
     fetchJSON({
         URL
     }) {
-        return fetch(URL).then(res => res.text())
+        return fetch(URL).then(res => res.json())
             .catch(err => '');
     }
     parseJSON({

@@ -1,4 +1,10 @@
 var abcs = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+function camelize(str) {
+    return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
+        if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+        return index === 0 ? match.toLowerCase() : match.toUpperCase();
+    });
+}
 
 class Extras {
 
@@ -358,6 +364,112 @@ class Extras {
             }
         }
     }
-    
+    boolBlock({
+        MENU
+    }) {
+        if (MENU == "" || MENU == 0 || MENU == null || MENU == false || MENU.toLowerCase() == "false" || MENU == "f" || MENU == "0") {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    ternaryBlock({
+        C,
+        T,
+        E
+    }) {
+        return C ? T : E;
+    }
+    substringBlock({
+        F,
+        S,
+        T
+    }) {
+        return T.substring(F - 1, S);
+    }
+    softReplace({
+        O,
+        N,
+        T
+    }) {
+        return T.toString().replace(O, N);
+    }
+    startEndWithBlock({
+        T,
+        MENU,
+        L
+    }) {
+        if (MENU == "starts") {
+            return T.startsWith(L);
+        } else if (MENU == "ends") {
+            return T.endsWith(L);
+        }
+    }
+    searchBlock({
+        I,
+        T
+    }) {
+        return T.search(T) + 1;
+    }
+    toCaseBlock({
+        T,
+        MENU
+    }) {
+        if (MENU == "UPPERCASE") {
+            return T.toUpperCase();
+        } else if (MENU == "lowercase") {
+            return T.toLowerCase();
+        } else if (MENU == "camelCase") {
+            return camelize(T);
+        } else {
+            return T.trim().toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+        }
+    }
+    piBlock() {
+        return Math.PI;
+    }
+    microBlock() {
+        return 0.000001;
+    }
+    charCodeBlock({
+        I,
+        T
+    }) {
+        return T.charCodeAt(I - 1);
+    }
+    charCodeToBlock({
+        C
+    }) {
+        return String.fromCharCode(C);
+    }
+    nanBlock({
+        V
+    }) {
+        return isNaN(V);
+    }
+    msBlock() {
+        return Date.now() % 1000;
+    }
+    abcBlock() {
+        return abcs.toString();
+    }
+    strictReplaceBlock({
+        O,
+        N,
+        T
+    }) {
+        return T.toString().replace(new RegExp(O, 'gi'), N);
+    }
+    trimBlock({
+        T
+    }) {
+        return T.trim();
+    }
+    fetchHTML({
+        W
+    }) {
+        return fetch(W).then(res => res.text())
+            .catch(err => '');
+    }
 }
 Scratch.extensions.register(new Extras());
