@@ -204,6 +204,59 @@ class Extras {
                             menu: "cases"
                         }
                     }
+                },
+                {
+                    opcode: "piBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "pi",
+
+                    arguments: { }
+                },
+                {
+                    opcode: "microBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "micro",
+
+                    arguments: { }
+                },
+                {
+                    opcode: "charCodeBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "character code at [I] in [T]",
+
+                    arguments: {
+                        I: {
+                            type: Scratch.ArgumentType.NUMBER,
+
+                            defaultValue: 1
+                        },
+                        T: {
+                            type: Scratch.ArgumentType.NUMBER,
+
+                            defaultValue: "foo"
+                        }
+                    }
+                },
+                {
+                    opcode: "charCodeToBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "character code [C] to character",
+
+                    arguments: {
+                        C: {
+                            type: Scratch.ArgumentType.NUMBER,
+
+                            defaultValue: 47
+                        }
+                    }
                 }
             ],
             
@@ -262,6 +315,18 @@ class Extras {
             case "Capitalize":
                 return capitalize(T);
         }
+    }
+    piBlock() {
+        return Math.PI;
+    }
+    microBlock() {
+        return 0.000001;
+    }
+    charCodeBlock({I,T}) {
+        return T.charCodeAt(I - 1);
+    }
+    charCodeToBlock({C}) {
+        return String.fromCharCode(C);
     }
 }
 Scratch.extensions.register(new Extras());
