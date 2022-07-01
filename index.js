@@ -6,13 +6,14 @@ class Extras {
 
     getInfo() {
         return {
-            id: "extras",
+            id: "sExtras",
             name: "Extras",
 
             color1: "#8BC34A",
             color2: "#7CB342",
 
-            blocks: [{
+            blocks: [
+                {
                     opcode: "bool",
 
                     blockType: Scratch.BlockType.BOOLEAN,
@@ -447,15 +448,6 @@ class Extras {
     }) {
         return isNaN(V);
     }
-    evalBlock({
-        A
-    }) {
-        try {
-            return eval(A);
-        } catch (err) {
-            return err;
-        }
-    }
     msBlock() {
         return Date.now() % 1000;
     }
@@ -488,10 +480,11 @@ class Json {
 
     getInfo() {
         return {
-            id: "sjson",
+            id: "sJson",
             name: "JSON",
 
-            blocks: [{
+            blocks: [
+                {
                     opcode: "split",
 
                     blockType: Scratch.BlockType.REPORTER,
@@ -586,11 +579,7 @@ class Json {
 
                     func: "fetchJSON"
                 }
-            ],
-
-            menus: {
-
-            }
+            ]
         }
     }
     splitBlock({
@@ -606,6 +595,15 @@ class Json {
     }) {
         const a = A.split(",");
         return a[I - 1];
+    }
+    evalBlock({
+        A
+    }) {
+        try {
+            return eval(A);
+        } catch (err) {
+            return err;
+        }
     }
     //https://sheeptester.github.io/javascripts/utilities.js
     fetchJSON({
