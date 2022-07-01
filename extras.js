@@ -114,6 +114,56 @@ class Extras {
                             defaultValue: "Hello World!"
                         }
                     }
+                },
+                {
+                    opcode: "strictReplaceBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "[O] = [N] in [T]",
+
+                    arguments: {
+                        O: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "e"
+                        },
+                        N: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "a"
+                        },
+                        T: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "eaeeeaea"
+                        }
+                    }
+                },
+                {
+                    opcode: "startEndWithBlock",
+
+                    blockType: Scratch.BlockType.BOOLEAN,
+
+                    text: "[T] [MENU] with [L] ?",
+
+                    arguments: {
+                        T: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "Sample Text"
+                        },
+                        MENU: {
+                            type: Scratch.ArgumentType.NUMBER,
+
+                            menu: "startend"
+                        },
+                        L: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "Text"
+                        }
+                    }
                 }
             ],
             
@@ -122,6 +172,9 @@ class Extras {
                     items: ["true", "false"],
 
                     acceptReporters: true
+                },
+                startend: {
+                    items: ["starts", "ends"]
                 }
             }
         }
@@ -141,6 +194,16 @@ class Extras {
     }
     softReplaceBlock({O,N,T}) {
         return T.toString().replace(O, N);
+    }
+    strictReplaceBlock({O,N,T}) {
+        return T.toString().replace(new RegExp(O, 'gi'), N);
+    }
+    startEndWithBlock({T,MENU,L}) {
+        if (MENU == "starts") {
+            return T.startsWith(L);
+        } else if (MENU == "ends") {
+            return T.endsWith(L);
+        }
     }
 }
 Scratch.extensions.register(new Extras());
