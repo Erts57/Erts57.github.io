@@ -214,7 +214,7 @@ class Extras {
 
                     text: "math PI",
 
-                    arguments: { },
+                    arguments: {},
 
                     func: "piBlock"
                 },
@@ -225,7 +225,7 @@ class Extras {
 
                     text: "micro",
 
-                    arguments: { },
+                    arguments: {},
 
                     func: "microBlock"
                 },
@@ -309,7 +309,7 @@ class Extras {
 
                     text: "current millisecond",
 
-                    arguments: { },
+                    arguments: {},
 
                     func: "msBlock"
                 },
@@ -320,7 +320,7 @@ class Extras {
 
                     text: "ABCs array",
 
-                    arguments: { },
+                    arguments: {},
 
                     func: "abcBlock"
                 },
@@ -452,7 +452,7 @@ class Extras {
         return Date.now() % 1000;
     }
     abcBlock() {
-        return abc.toString();
+        return abcs.toString();
     }
     strictReplaceBlock({
         O,
