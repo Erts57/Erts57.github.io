@@ -2,14 +2,12 @@ var abcs = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n"
 
 class Extras {
 
-    constructor() {
-
-    }
+    constructor() { }
 
     getInfo() {
         return {
-            id: "",
-            name: "",
+            id: "extras",
+            name: "Extras",
 
             color1: "#8BC34A",
             color2: "#7CB342",
@@ -486,14 +484,12 @@ class Extras {
 }
 class Json {
 
-    constructor() {
-
-    }
+    constructor() { }
 
     getInfo() {
         return {
-            id: "",
-            name: "",
+            id: "sjson",
+            name: "JSON",
 
             blocks: [{
                     opcode: "split",
