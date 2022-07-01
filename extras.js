@@ -1,8 +1,8 @@
 var abcs = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 function camelize(str) {
-    return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
-        if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
-        return index === 0 ? match.toLowerCase() : match.toUpperCase();
+    return str.replace(/\W+(.)/g, function(match, chr)
+    {
+        return chr.toUpperCase();
     });
 }
 
@@ -397,8 +397,13 @@ class Extras {
             return T.toLowerCase();
         } else if (MENU == "camelCase") {
             return camelize(T);
-        } else {
-            return T.trim().toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+        } else if (MENU == "Capitalize") {
+            const arr = T.split(" ");
+            for (var i = 0; i < arr.length; i++) {
+                arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+            
+            }
+            return arr.join(" ");
         }
     }
     piBlock() {
@@ -428,9 +433,9 @@ class Extras {
     trimBlock({T}) {
         return T.trim();
     }
-    /*fetchHTML({W}) {
+    fetchHTML({W}) {
         return fetch(W).then(res => res.text())
             .catch(err => '');
-    }*/
+    }
 }
 Scratch.extensions.register(new Extras());
