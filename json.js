@@ -133,7 +133,7 @@ class Json {
         URL
     }) {
         return fetch(URL).then(res => res.json())
-            .catch(err => '');
+            .catch(err => '').toString();
     }
     parseJSON({
         PATH,
