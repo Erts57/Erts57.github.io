@@ -364,7 +364,7 @@ class Extras {
             if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
             return index === 0 ? match.toLowerCase() : match.toUpperCase();
         });
-    }*/
+    }
     boolBlock({
         MENU
     }) {
@@ -411,7 +411,7 @@ class Extras {
         T
     }) {
         return T.search(T) + 1;
-    }
+    }*/
     toCaseBlock({
         T,
         MENU
@@ -425,7 +425,7 @@ class Extras {
         } else {
             return T.trim().toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase()))); //https://www.digitalocean.com/community/tutorials/js-capitalizing-strings
         }
-    }
+    }/*
     piBlock() {
         return Math.PI;
     }
@@ -472,9 +472,9 @@ class Extras {
         return fetch(W)
             .then(res => res.text())
             .catch(err => '');
-    }
+    }*/
 }
-class Json {
+/*class Json {
 
     constructor() { }
 
@@ -635,6 +635,6 @@ class Json {
             return '';
         }
     }
-}
+}*/
 Scratch.extensions.register(new Extras());
-Scratch.extensions.register(new Json());
+//Scratch.extensions.register(new Json());
