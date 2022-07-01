@@ -1,3 +1,6 @@
+function alertFunction(message) {
+    window.alert(message);
+}
 class Browser {
 
     constructor() { }
@@ -27,7 +30,7 @@ class Browser {
         }
     }
     alertBlock({M}) {
-        window.alert(M.toString());
+        alertFunction(M.toString());
     }
 }
 Scratch.extensions.register(new Browser());
