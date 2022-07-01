@@ -164,6 +164,46 @@ class Extras {
                             defaultValue: "Text"
                         }
                     }
+                },
+                {
+                    opcode: "searchBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "index of [I] in [T]",
+
+                    arguments: {
+                        I: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "are"
+                        },
+                        T: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "How are you?"
+                        }
+                    }
+                },
+                {
+                    opcode: "toCaseBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "make [T] to [MENU]",
+
+                    arguments: {
+                        T: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "HeLlO pEoPlE"
+                        },
+                        MENU: {
+                            type: Scratch.ArgumentType.NUMBER,
+
+                            menu: "cases"
+                        }
+                    }
                 }
             ],
             
@@ -175,6 +215,9 @@ class Extras {
                 },
                 startend: {
                     items: ["starts", "ends"]
+                },
+                cases: {
+                    items: ["UPPERCASE", "lowercase", "camelCase", "Capitalize"]
                 }
             }
         }
@@ -203,6 +246,21 @@ class Extras {
             return T.startsWith(L);
         } else if (MENU == "ends") {
             return T.endsWith(L);
+        }
+    }
+    searchBlock({I,T}) {
+        return T.search(I) + 1;
+    }
+    toCaseBlock({T,MENU}) {
+        switch (MENU) {
+            case "UPPERCASE":
+                return T.toUpperCase();
+            case "lowercase":
+                return T.toLowerCase();
+            case "camelCase":
+                return camelize(T);
+            case "Capitalize":
+                return capitalize(T);
         }
     }
 }
