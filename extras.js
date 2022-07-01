@@ -257,6 +257,45 @@ class Extras {
                             defaultValue: 47
                         }
                     }
+                },
+                {
+                    opcode: "trimBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "trim [T]",
+
+                    arguments: {
+                        T: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: '     trim me      '
+                        }
+                    }
+                },
+                {
+                    opcode: "nanBlock",
+
+                    blockType: Scratch.BlockType.BOOLEAN,
+
+                    text: "is [V] NaN?",
+
+                    arguments: {
+                        V: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "hi"
+                        }
+                    }
+                },
+                {
+                    opcode: "msBlock",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "current millisecond",
+
+                    arguments: { }
                 }
             ],
             
@@ -327,6 +366,15 @@ class Extras {
     }
     charCodeToBlock({C}) {
         return String.fromCharCode(C);
+    }
+    trimBlock({T}) {
+        return T.trim();
+    }
+    nanBlock({V}) {
+        return isNaN(V);
+    }
+    msBlock() {
+        return Date.now() % 1000;
     }
 }
 Scratch.extensions.register(new Extras());
