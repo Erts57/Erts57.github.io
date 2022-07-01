@@ -132,8 +132,8 @@ class Json {
     fetchJSON({
         URL
     }) {
-        return fetch(URL).then(res => res.json())
-            .catch(err => '').toString();
+        return fetch(URL).then(res => res.text())
+            .catch(err => '');
     }
     parseJSON({
         PATH,

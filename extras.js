@@ -305,22 +305,7 @@ class Extras {
                     text: "ABCs array",
 
                     arguments: { }
-                }/*,
-                {
-                    opcode: "fetchHTMLBlock",
-
-                    blockType: Scratch.BlockType.REPORTER,
-
-                    text: "fetch html from [W]",
-
-                    arguments: {
-                        W: {
-                            type: Scratch.BlocksType.STRING,
-
-                            defaultValue: "https://www.google.com"
-                        }
-                    }
-                }*/
+                }
             ],
             
             menus: {
@@ -403,9 +388,5 @@ class Extras {
     abcsBlock() {
         return abcs.toString();
     }
-    /*fetchHTMLBlock({W}) {
-        return fetch(W).then(res => res.text())
-            .catch(err => '');
-    }*/
 }
 Scratch.extensions.register(new Extras());
