@@ -41,6 +41,29 @@ class Extras {
                             menu: "bools"
                         }
                     }
+                },
+                {
+                    opcode: "ternary",
+
+                    blockType: Scratch.BlockType.REPORTER,
+
+                    text: "if [C] then [T] else [E]",
+
+                    arguments: {
+                        C: {
+                            type: Scratch.ArgumentType.BOOLEAN
+                        },
+                        T: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "this"
+                        },
+                        E: {
+                            type: Scratch.ArgumentType.STRING,
+
+                            defaultValue: "that"
+                        }
+                    }
                 }
             ],
             
@@ -52,6 +75,16 @@ class Extras {
                 }
             }
         }
+    }
+    boolBlock({MENU}) {
+        if (MENU == "" || MENU == 0 || MENU == null || MENU == false || MENU.toString().toLowerCase() == "false" || MENU.toString().toLowerCase() == "f" || MENU.toString() == "0" || MENU <= 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    ternaryBlock({C,T,E}) {
+        return C ? T : E;
     }
 }
 Scratch.extensions.register(new Extras());
