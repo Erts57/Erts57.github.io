@@ -2,7 +2,7 @@ var abcs = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n"
 
 class Extras {
 
-    constructor() { }
+    //constructor() { }
 
     getInfo() {
         return {
