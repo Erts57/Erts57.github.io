@@ -20,7 +20,7 @@ function createTopNavElement() {
 let data;
 (async () => {  
     try {  
-        const res = await fetch("topnav")  
+        const res = await fetch(topnav)
         const out = await res.json()  
         data = out; 
     } catch (err) {  
