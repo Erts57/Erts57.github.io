@@ -9,7 +9,7 @@ function createTopNavElement() {
         element.innerHTML = data[i].header;
         element.href = data[i].source;
         
-        if (data[i].active.includes(window.location.href)) {
+        if (data[i].active.includes(window.location.pathname)) {
             element.className = "active";
         }
         
