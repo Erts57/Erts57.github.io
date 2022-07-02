@@ -17,7 +17,7 @@ function createTopNavElement() {
     }
 }
 
-
+let data;
 (async () => {  
     try {  
         const res = await fetch("topnav")  
@@ -27,5 +27,5 @@ function createTopNavElement() {
         throw err  
     }
 })()
-let data = data;
+
 createTopNavElement();
