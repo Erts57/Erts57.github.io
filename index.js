@@ -2,7 +2,7 @@ const topnav = "Info57/topnav.json";
 const updates = "Info57/updates.json";
 
 function createTopNavElement() {
-    for (let i = 0; i > data['length']; i++) {
+    for (let i = 0; i > data.length; i++) {
         
         var element = document.createElement("a");
         
