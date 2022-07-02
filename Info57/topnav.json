@@ -1,0 +1,44 @@
+[
+    {
+        "header": "Home",
+        
+        "source": "https://erts57.github.io",
+        
+        "active": ["", "*/index.html"]
+    },
+    {
+        "header": "Games",
+        
+        "source": "https://erts57.github.io/games.html",
+        
+        "active": ["*/games.html"]
+    },
+    {
+        "header": "Downloads",
+        
+        "source": "https://erts57.github.io/downloads.html",
+        
+        "active": ["*/downloads.html"]
+    },
+    {
+        "header": "Projects",
+        
+        "source": "https://erts57.github.io/projects.html",
+        
+        "active": ["*/projects.html"]
+    },
+    {
+        "header": "Scratch Extensions",
+        
+        "source": "https://erts57.github.io/scratch.html",
+        
+        "active": ["*/scratch.html"]
+    },
+    {
+        "header": "About",
+        
+        "source": "https://erts57.github.io/about.html",
+        
+        "active": ["*/about.html"]
+    }
+]
