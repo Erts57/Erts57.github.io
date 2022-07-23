@@ -1784,7 +1784,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* #E5F0FF */\n\n/* #E9F1FC */\n\n/* #D9E3F2 */\n\n/* 90% transparent version of motion-primary */\n\n/* #FFFFFF */\n\n/* 25% transparent version of ui-white */\n\n/* 25% transparent version of ui-white */\n\n/* 25% transparent version of ui-white */\n\n/* 15% transparent version of black */\n\n/* #575E75 */\n\n/* 35% transparent version of motion-primary */\n\n/* 15% transparent version of motion-primary */\n\n/* opt-in theme overrides */\n\n/* #FF661A */\n\n/* #E64D00 */\n\n/* #CF63CF */\n\n/* #BD42BD */\n\n/* #FFAB19 */\n\n/* #FF8C1A */\n\n/* #0FBD8C */\n\n/* #0FBD8C */\n\n/* #FF8C1A */\n\n/* #FFB366 */\n\n/* #FF8C1A */\n\n/* 35% transparent version of extensions-primary */\n\n/* opaque version of extensions-transparent, on white bg */\n\n/* lighter than motion-primary */\n\n.question_question-container_26Z9Q {\n    margin: 0.5rem;\n    border: 1px solid hsla(0, 0%, 0%, 0.15);\n    border-radius: 0.5rem;\n    border-width: 2px;\n    padding: 1rem;\n    background: white;\n}\n\n.question_question-label_1SgY7 {\n    font-size: 0.75rem;\n    font-weight: bold;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: hsla(225, 15%, 40%, 1);\n    padding-bottom: 0.5rem;\n}\n\n.question_question-input_Bvy05 {\n    display: flex; /* Keeps the input from going outside this container */\n    position: relative;\n}\n\n/* tw: input should not look different in dark mode */\n\n[theme=\"dark\"] .question_question-input_Bvy05 input {\n    color: hsla(225, 15%, 40%, 1);\n    background: hsla(215, 75%, 95%, 1);\n    border-color: hsla(215, 50%, 90%, 1);\n}\n\n[theme=\"dark\"] .question_question-input_Bvy05 input:hover,\n[theme=\"dark\"] .question_question-input_Bvy05 input:focus {\n    border-color: hsla(127, 100%, 35%, 1);\n}\n\n.question_question-submit-button_1zp3B {\n    position: absolute;\n    top: calc(0.5rem / 2);\n\n    width: calc(2rem - 0.5rem);\n    height: calc(2rem - 0.5rem);\n\n    border: none;\n    border-radius: 100%;\n\n    color: white;\n    background: hsla(127, 100%, 35%, 1);\n}\n\n[dir=\"ltr\"] .question_question-submit-button_1zp3B {\n    right: calc(0.5rem / 2);\n}\n\n[dir=\"rtl\"] .question_question-submit-button_1zp3B {\n    left: calc(0.5rem / 2);\n}\n\n/* Input overrides: width, font-weight, focus outline and padding */\n\n.question_question-input_Bvy05 > input {\n    width: 100%;\n    font-weight: normal;\n}\n\n[dir=\"ltr\"] .question_question-input_Bvy05 > input {\n    padding: 0 2rem 0 .75rem; /* To make room for the submit button */\n}\n\n[dir=\"rtl\"] .question_question-input_Bvy05 > input {\n    padding: 0 .75rem 0 2rem; /* To make room for the submit button */\n}\n\n.question_question-input_Bvy05 > input:focus {\n    box-shadow: 0px 0px 0px 3px hsla(127, 100%, 35%, 0.35);\n}\n\n.question_question-submit-button-icon_3E4g- {\n    width: calc(2rem - 0.5rem);\n    height: calc(2rem - 0.5rem);\n    position: relative;\n    right: -7px;\n    left: -7px;\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* #E5F0FF */\n\n/* #E9F1FC */\n\n/* #D9E3F2 */\n\n/* 90% transparent version of motion-primary */\n\n/* #FFFFFF */\n\n/* 25% transparent version of ui-white */\n\n/* 25% transparent version of ui-white */\n\n/* 25% transparent version of ui-white */\n\n/* 15% transparent version of black */\n\n/* #575E75 */\n\n/* 35% transparent version of motion-primary */\n\n/* 15% transparent version of motion-primary */\n\n/* opt-in theme overrides */\n\n/* #FF661A */\n\n/* #E64D00 */\n\n/* #CF63CF */\n\n/* #BD42BD */\n\n/* #FFAB19 */\n\n/* #FF8C1A */\n\n/* #0FBD8C */\n\n/* #0FBD8C */\n\n/* #FF8C1A */\n\n/* #FFB366 */\n\n/* #FF8C1A */\n\n/* 35% transparent version of extensions-primary */\n\n/* opaque version of extensions-transparent, on white bg */\n\n/* lighter than motion-primary */\n\n.question_question-container_26Z9Q {\n    margin: 0.5rem;\n    border: 1px solid hsla(0, 0%, 0%, 0.15);\n    border-radius: 0.5rem;\n    border-width: 2px;\n    padding: 1rem;\n    background: white;\n}\n\n.question_question-label_1SgY7 {\n    font-size: 0.75rem;\n    font-weight: bold;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: hsla(225, 15%, 40%, 1);\n    padding-bottom: 0.5rem;\n}\n\n.question_question-input_Bvy05 {\n    display: flex; /* Keeps the input from going outside this container */\n    position: relative;\n}\n\n/* tw: input should not look different in dark mode */\n\n[theme=\"dark\"] .question_question-input_Bvy05 input {\n    color: hsla(225, 15%, 40%, 1);\n    background: hsla(215, 75%, 95%, 1);\n    border-color: hsla(215, 50%, 90%, 1);\n}\n\n[theme=\"dark\"] .question_question-input_Bvy05 input:hover,\n[theme=\"dark\"] .question_question-input_Bvy05 input:focus {\n    border-color: hsla(127, 100%, 35%, 1);\n}\n\n.question_question-submit-button_1zp3B {\n    position: absolute;\n    top: calc(0.5rem / 2);\n\n    width: calc(2rem - 0.5rem);\n    height: calc(2rem - 0.5rem);\n\n    border: none;\n    border-radius: 100%;\n\n    color: white;\n    background: hsla(127, 100%, 35%, 1);\n}\n\n[dir=\"ltr\"] .question_question-submit-button_1zp3B {\n    right: calc(0.5rem / 2);\n}\n\n[dir=\"rtl\"] .question_question-submit-button_1zp3B {\n    left: calc(0.5rem / 2);\n}\n\n/* Input overrides: width, font-weight, focus outline and padding */\n\n.question_question-input_Bvy05 > input {\n    width: 100%;\n    font-weight: normal;\n}\n\n[dir=\"ltr\"] .question_question-input_Bvy05 > input {\n    padding: 0 2rem 0 .75rem; /* To make room for the submit button */\n}\n\n[dir=\"rtl\"] .question_question-input_Bvy05 > input {\n    padding: 0 .75rem 0 2rem; /* To make room for the submit button */\n}\n\n.question_question-input_Bvy05 > input:focus {\n    box-shadow: 0px 0px 0px 3px hsla(127, 100%, 35%, 0.35);\n}\n\n.question_question-submit-button-icon_3E4g- {\n    width: calc(2rem - 0.5rem);\n    height: calc(2rem - 0.5rem);\n    position: relative;\n    right: -7px;\n    left: -7px;\n}\n\n#question_browserFileLoader_6kol1 {\n    display: none;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -1797,7 +1797,8 @@ exports.locals = {
 	"question-submit-button": "question_question-submit-button_1zp3B",
 	"questionSubmitButton": "question_question-submit-button_1zp3B",
 	"question-submit-button-icon": "question_question-submit-button-icon_3E4g-",
-	"questionSubmitButtonIcon": "question_question-submit-button-icon_3E4g-"
+	"questionSubmitButtonIcon": "question_question-submit-button-icon_3E4g-",
+	"browserFileLoader": "question_browserFileLoader_6kol1"
 };
 
 /***/ }),
@@ -14620,7 +14621,7 @@ class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component 
       placeholder: "x",
       tabIndex: "0",
       type: "text",
-      value: this.props.disabled ? '' : Math.round(this.props.x),
+      value: this.props.disabled ? '' : this.props.x.toFixed(2),
       onSubmit: this.props.onChangeX
     })));
     const yPosition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
@@ -14639,7 +14640,7 @@ class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component 
       placeholder: "y",
       tabIndex: "0",
       type: "text",
-      value: this.props.disabled ? '' : Math.round(this.props.y),
+      value: this.props.disabled ? '' : this.props.y.toFixed(2),
       onSubmit: this.props.onChangeY
     })));
 
@@ -16160,15 +16161,20 @@ const StopAllComponent = function StopAllComponent(props) {
   } = props,
         componentProps = _objectWithoutProperties(props, _excluded);
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", _extends({
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _stop_all_css__WEBPACK_IMPORTED_MODULE_4___default.a.stopAll, {
-      [_stop_all_css__WEBPACK_IMPORTED_MODULE_4___default.a.isActive]: active
-    }),
-    draggable: false,
-    src: _icon_stop_all_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
-    title: title,
-    onClick: onClick
-  }, componentProps));
+  return (
+    /*#__PURE__*/
+    //<div>
+    react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", _extends({
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _stop_all_css__WEBPACK_IMPORTED_MODULE_4___default.a.stopAll, {
+        [_stop_all_css__WEBPACK_IMPORTED_MODULE_4___default.a.isActive]: active
+      }),
+      draggable: false,
+      src: _icon_stop_all_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+      title: title,
+      onClick: onClick
+    }, componentProps)) //</div>
+
+  );
 };
 
 StopAllComponent.propTypes = {
@@ -17399,7 +17405,7 @@ const DisableCompiler = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__
   }),
   help: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"] // eslint-disable-next-line max-len
   , {
-    defaultMessage: "Disables the TurboWarp compiler. You may want to enable this while editing projects so that scripts update immediately. Otherwise, you should never enable this.",
+    defaultMessage: "Disables the compiler. You may want to enable this while editing projects so that scripts update immediately. Otherwise, you should never enable this.",
     id: "tw.settingsModal.disableCompilerHelp"
   }),
   slug: "disable-compiler"
@@ -17470,7 +17476,7 @@ const StoreProjectOptions = ({
   id: "tw.settingsModal.storeProjectOptions"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"] // eslint-disable-next-line max-len
 , {
-  defaultMessage: "Stores the selected settings in the project so they will be automatically applied when TurboWarp loads this project. Warp timer and disable compiler will not be saved.",
+  defaultMessage: "Stores the selected settings in the project so they will be automatically applied when GameMaker loads this project. Warp timer and disable compiler will not be saved.",
   id: "tw.settingsModal.storeProjectOptionsHelp"
 }))));
 
@@ -31433,38 +31439,39 @@ const projectData = translateFunction => {
       }],
       sounds: [],
       volume: 100
-    }, {
-      isStage: false,
-      name: translator(messages.sprite, {
-        index: 1
-      }),
-      variables: {},
-      lists: {},
-      broadcasts: {},
-      blocks: {},
-      comments: {},
-      currentCostume: 0,
-      costumes: [{
-        assetId: '592bae6f8bb9c8d88401b54ac431f7b6',
-        name: translator(messages.costume, {
-          index: 1
-        }),
-        bitmapResolution: 1,
-        md5ext: '592bae6f8bb9c8d88401b54ac431f7b6.svg',
-        dataFormat: 'svg',
-        rotationCenterX: 44,
-        rotationCenterY: 44
-      }],
-      sounds: [],
-      volume: 100,
-      visible: true,
-      x: 0,
-      y: 0,
-      size: 100,
-      direction: 90,
-      draggable: false,
-      rotationStyle: 'all around'
-    }],
+    }
+    /*,
+    {
+       isStage: false,
+       name: translator(messages.sprite, {index: 1}),
+       variables: {},
+       lists: {},
+       broadcasts: {},
+       blocks: {},
+       comments: {},
+       currentCostume: 0,
+       costumes: [
+           {
+               assetId: '592bae6f8bb9c8d88401b54ac431f7b6',
+               name: translator(messages.costume, {index: 1}),
+               bitmapResolution: 1,
+               md5ext: '592bae6f8bb9c8d88401b54ac431f7b6.svg',
+               dataFormat: 'svg',
+               rotationCenterX: 44,
+               rotationCenterY: 44
+           }
+       ],
+       sounds: [],
+       volume: 100,
+       visible: true,
+       x: 0,
+       y: 0,
+       size: 100,
+       direction: 90,
+       draggable: false,
+       rotationStyle: 'all around'
+    }*/
+    ],
     meta: {
       semver: '3.0.0',
       vm: '0.1.0',
@@ -32178,8 +32185,8 @@ const emptySprite = (name, soundName, costumeName) => ({
     rotationCenterY: 0
   }],
   currentCostumeIndex: 0,
-  scratchX: 36,
-  scratchY: 28,
+  scratchX: 0,
+  scratchY: 0,
   scale: 1,
   direction: 90,
   rotationStyle: 'normal',
@@ -34257,7 +34264,7 @@ const translate = (id, english) => {
 
 const motion = function motion(isInitialSetup, isStage, targetId) {
   const stageSelected = translate('MOTION_STAGE_SELECTED', 'Stage selected: no motion blocks');
-  return "\n    <category name=\"%{BKY_CATEGORY_MOTION}\" id=\"motion\" colour=\"#4C97FF\" secondaryColour=\"#3373CC\">\n        ".concat(isStage ? "\n        <label text=\"".concat(stageSelected, "\"></label>\n        ") : "\n        <block type=\"motion_movesteps\">\n            <value name=\"STEPS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_turnright\">\n            <value name=\"DEGREES\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">15</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_turnleft\">\n            <value name=\"DEGREES\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">15</field>\n                </shadow>\n            </value>\n        </block>\n        ".concat(blockSeparator, "\n        <block type=\"motion_goto\">\n            <value name=\"TO\">\n                <shadow type=\"motion_goto_menu\">\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_gotoxy\">\n            <value name=\"X\">\n                <shadow id=\"movex\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n            <value name=\"Y\">\n                <shadow id=\"movey\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_glideto\" id=\"motion_glideto\">\n            <value name=\"SECS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n            <value name=\"TO\">\n                <shadow type=\"motion_glideto_menu\">\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_glidesecstoxy\">\n            <value name=\"SECS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n            <value name=\"X\">\n                <shadow id=\"glidex\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n            <value name=\"Y\">\n                <shadow id=\"glidey\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_pointindirection\">\n            <value name=\"DIRECTION\">\n                <shadow type=\"math_angle\">\n                    <field name=\"NUM\">90</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_pointtowards\">\n            <value name=\"TOWARDS\">\n                <shadow type=\"motion_pointtowards_menu\">\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_changexby\">\n            <value name=\"DX\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_setx\">\n            <value name=\"X\">\n                <shadow id=\"setx\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_changeyby\">\n            <value name=\"DY\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_sety\">\n            <value name=\"Y\">\n                <shadow id=\"sety\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_ifonedgebounce\"/>\n        ").concat(blockSeparator, "\n        <block type=\"motion_setrotationstyle\"/>\n        ").concat(blockSeparator, "\n        <block id=\"").concat(targetId, "_xposition\" type=\"motion_xposition\"/>\n        <block id=\"").concat(targetId, "_yposition\" type=\"motion_yposition\"/>\n        <block id=\"").concat(targetId, "_direction\" type=\"motion_direction\"/>"), "\n        ").concat(categorySeparator, "\n    </category>\n    ");
+  return "\n    <category name=\"%{BKY_CATEGORY_MOTION}\" id=\"motion\" colour=\"#4C97FF\" secondaryColour=\"#3373CC\">\n        ".concat(isStage ? "\n        <label text=\"".concat(stageSelected, "\"></label>\n        ") : "\n        <block type=\"motion_movesteps\">\n            <value name=\"STEPS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_turnright\">\n            <value name=\"DEGREES\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">45</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_turnleft\">\n            <value name=\"DEGREES\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">45</field>\n                </shadow>\n            </value>\n        </block>\n        ".concat(blockSeparator, "\n        <block type=\"motion_goto\">\n            <value name=\"TO\">\n                <shadow type=\"motion_goto_menu\">\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_gotoxy\">\n            <value name=\"X\">\n                <shadow id=\"movex\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n            <value name=\"Y\">\n                <shadow id=\"movey\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_glideto\" id=\"motion_glideto\">\n            <value name=\"SECS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n            <value name=\"TO\">\n                <shadow type=\"motion_glideto_menu\">\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_glidesecstoxy\">\n            <value name=\"SECS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n            <value name=\"X\">\n                <shadow id=\"glidex\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n            <value name=\"Y\">\n                <shadow id=\"glidey\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_pointindirection\">\n            <value name=\"DIRECTION\">\n                <shadow type=\"math_angle\">\n                    <field name=\"NUM\">90</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_pointtowards\">\n            <value name=\"TOWARDS\">\n                <shadow type=\"motion_pointtowards_menu\">\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_changexby\">\n            <value name=\"DX\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_setx\">\n            <value name=\"X\">\n                <shadow id=\"setx\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_changeyby\">\n            <value name=\"DY\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_sety\">\n            <value name=\"Y\">\n                <shadow id=\"sety\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_ifonedgebounce\"/>\n        ").concat(blockSeparator, "\n        <block type=\"motion_setrotationstyle\"/>\n        ").concat(blockSeparator, "\n        <block id=\"").concat(targetId, "_xposition\" type=\"motion_xposition\"/>\n        <block id=\"").concat(targetId, "_yposition\" type=\"motion_yposition\"/>\n        <block id=\"").concat(targetId, "_direction\" type=\"motion_direction\"/>"), "\n        ").concat(categorySeparator, "\n    </category>\n    ");
 };
 
 const xmlEscape = function xmlEscape(unsafe) {
@@ -34320,7 +34327,7 @@ const myBlocks = function myBlocks() {
 }; // eslint-disable-next-line max-len
 
 
-const extraTurboWarpBlocks = "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is TurboWarp?</field></block>\n";
+const extraTurboWarpBlocks = "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is GameMaker?</field></block>\n";
 /* eslint-enable no-unused-vars */
 
 const xmlOpen = '<xml style="display: none">';
@@ -36226,15 +36233,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"])({
   backdrop: {
     "id": "gui.sharedMessages.backdrop",
-    "defaultMessage": "backdrop{index}"
+    "defaultMessage": "backdrop-{index}"
   },
   costume: {
     "id": "gui.sharedMessages.costume",
-    "defaultMessage": "costume{index}"
+    "defaultMessage": "costume-{index}"
   },
   sprite: {
     "id": "gui.sharedMessages.sprite",
-    "defaultMessage": "Sprite{index}"
+    "defaultMessage": "sprite-{index}"
   },
   pop: {
     "id": "gui.sharedMessages.pop",
@@ -36872,7 +36879,7 @@ __webpack_require__.r(__webpack_exports__);
 // The maximum number of cloudv ariables that can be created in this scratch-gui instance.
 const MAXIMUM_CLOUD_VARIABLES = Infinity; // The maximum number of cloud variables that can be created in a vanilla Scratch.
 
-const SCRATCH_MAX_CLOUD_VARIABLES = 10;
+const SCRATCH_MAX_CLOUD_VARIABLES = 20;
 
 /***/ }),
 
@@ -37866,6 +37873,17 @@ module.exports = __webpack_require__.p + "static/assets/3682b35e452a7f4a5a61167d
 
 /***/ }),
 
+/***/ "./src/lib/tw-scratch-render-fonts/LDFComicSans.ttf":
+/*!**********************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/LDFComicSans.ttf ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/847a306030a53f6399592d10c679b8e4.ttf";
+
+/***/ }),
+
 /***/ "./src/lib/tw-scratch-render-fonts/NotoSans-Medium.ttf":
 /*!*************************************************************!*\
   !*** ./src/lib/tw-scratch-render-fonts/NotoSans-Medium.ttf ***!
@@ -37918,6 +37936,8 @@ module.exports = __webpack_require__.p + "static/assets/64bcfe1f13fce38e2ea26280
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint-disable import/no-commonjs */
+const ComicSans = __webpack_require__(/*! ./LDFComicSans.ttf */ "./src/lib/tw-scratch-render-fonts/LDFComicSans.ttf");
+
 const SansSerif = __webpack_require__(/*! ./NotoSans-Medium.ttf */ "./src/lib/tw-scratch-render-fonts/NotoSans-Medium.ttf");
 
 const Serif = __webpack_require__(/*! ./SourceSerifPro-Regular.otf */ "./src/lib/tw-scratch-render-fonts/SourceSerifPro-Regular.otf");
@@ -37935,6 +37955,7 @@ const Scratch = __webpack_require__(/*! ./Scratch.ttf */ "./src/lib/tw-scratch-r
 const log = __webpack_require__(/*! ../log */ "./src/lib/log.js").default;
 
 const fontSource = {
+  'Comic Sans MS': ComicSans,
   'Sans Serif': SansSerif,
   'Serif': Serif,
   'Handwriting': Handwriting,
@@ -38781,10 +38802,10 @@ const _TextDecoder = typeof TextDecoder === 'function' ? TextDecoder : class Tex
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateRandomUsername", function() { return generateRandomUsername; });
 const generateRandomUsername = () => {
-  const DIGITS = 4;
+  const DIGITS = 2;
   const randomNumber = Math.round(Math.random() * 10 ** DIGITS);
   const randomId = randomNumber.toString().padStart(DIGITS, '0');
-  const randomUsername = "player".concat(randomId);
+  const randomUsername = "unnamed#".concat(randomId);
   return randomUsername;
 };
 
@@ -42878,7 +42899,7 @@ const initialState = {
   interpolation: false,
   cloud: true,
   username: '',
-  highQualityPen: false,
+  highQualityPen: true,
   compilerOptions: {
     enabled: true,
     warpTimer: false

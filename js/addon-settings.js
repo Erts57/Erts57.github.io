@@ -1369,7 +1369,7 @@ if (locale !== 'en') {
   }
 }
 
-document.title = "".concat(settingsTranslations.title, " - TurboWarp");
+document.title = "".concat(settingsTranslations.title, " - GameMaker");
 const theme = Object(_lib_tw_theme_hoc_jsx__WEBPACK_IMPORTED_MODULE_10__["getInitialDarkMode"])() ? 'dark' : 'light';
 document.body.setAttribute('theme', theme);
 
@@ -2309,7 +2309,7 @@ class AddonSettingsComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.
       className: _settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.searchButton,
       onClick: this.handleClickSearchButton
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      href: "https://scratch.mit.edu/users/GarboMuffin/#comments",
+      href: "https://scratch.mit.edu/users/_Erts57_/#comments",
       target: "_blank",
       rel: "noreferrer",
       className: _settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.feedbackButtonOuter
