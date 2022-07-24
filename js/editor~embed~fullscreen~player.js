@@ -33359,6 +33359,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const discordIcon = 'https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/908828/how-to-make-a-discord-bot-7c0fe302b98b05b145682344b3a4ec59.png'; // https://www.toptal.com/chatbot/how-to-make-a-discord-bot
+
+const discordInsetIcon = 'https://pbs.twimg.com/profile_images/1392864511669854217/dBymBmGq_400x400.jpg'; // https://mobile.twitter.com/discord
+
 /* harmony default export */ __webpack_exports__["default"] = ([{
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Browser",
@@ -33402,6 +33406,21 @@ __webpack_require__.r(__webpack_exports__);
     id: "gui.extension.music.description"
   }),
   featured: true
+}, {
+  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Discord Bot",
+    id: "gui.discordBotExtension.name"
+  }),
+  extensionId: 'discordBot',
+  collaborator: 'Discord',
+  iconURL: discordIcon,
+  insetIconURL: discordInsetIcon,
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "An extension to help use discord bots. Not compatible with Scratch. DO NOT USE! EXPERIMENTAL!",
+    id: "gui.discordBotExtension.description"
+  }),
+  featured: true,
+  internetConnectionRequired: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Pen",
