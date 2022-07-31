@@ -3176,7 +3176,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 if (window.parent !== window) {
   // eslint-disable-next-line no-alert
-  alert('This page is embedding GameMaker in a way that is unsupported and will cease to function in the near future. Please read https://docs.turbowarp.org/embedding');
+  alert('This page is embedding GameLab in a way that is unsupported and will cease to function in the near future. Please read https://docs.turbowarp.org/embedding');
   throw new Error('Invalid embed');
 }
 
@@ -3219,7 +3219,7 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.c
   className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.footerText
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_5__["FormattedMessage"] // eslint-disable-next-line max-len
 , {
-  defaultMessage: "GameMaker is not affiliated with Scratch, the Scratch Team, the Scratch Foundation, or TurboWarp. It is only a mod of TurboWarp and still supports all the people who worked on TurboWarp.",
+  defaultMessage: "GameLab is not affiliated with Scratch, the Scratch Team, the Scratch Foundation, or TurboWarp. It is only a mod of TurboWarp and still supports all the people who worked on TurboWarp.",
   id: "tw.footer.disclaimer"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
   className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.footerColumns
@@ -3294,9 +3294,9 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
 
   handleUpdateProjectTitle(title, isDefault) {
     if (isDefault || !title) {
-      document.title = "GameMaker - ".concat(this.props.intl.formatMessage(messages.defaultTitle));
+      document.title = "GameLab - ".concat(this.props.intl.formatMessage(messages.defaultTitle));
     } else {
-      document.title = "".concat(title, " - GameMaker");
+      document.title = "".concat(title, " - Gamelab");
     }
   }
 
@@ -3370,7 +3370,7 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
       className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_5__["FormattedMessage"] // eslint-disable-next-line max-len
     , {
-      defaultMessage: "GameMaker is a TurboWarp mod that compiles projects to JavaScript to make them run really fast. Mainly used to create advanced games that you weren't able to make on Scratch. Try it out by opening up the editor!",
+      defaultMessage: "GameLab is a TurboWarp mod that compiles projects to JavaScript to make them run really fast. Mainly used to create advanced games that you weren't able to make on Scratch. Try it out by opening up the editor!",
       id: "tw.home.description"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section

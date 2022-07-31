@@ -1,7 +1,7 @@
 {
-  "short_name": "GameMaker",
-  "name": "GameMaker",
-  "description": "Mod of TurboWarp with extra extensions and more features.",
+  "short_name": "GameLab",
+  "name": "GameLab",
+  "description": "Mod of TurboWarp with extra extensions and more features for making advanced games.",
   "icons": [
     {
       "src": "images/192.png",

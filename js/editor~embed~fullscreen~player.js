@@ -33132,10 +33132,10 @@ module.exports = __webpack_require__.p + "static/assets/40998229311219c2117265d5
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/cloudlink/cloudlink-inset.svg":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/cloudlink/cloudlink-inset.svg ***!
-  \********************************************************************/
+/***/ "./src/lib/libraries/extensions/cloudserver/cloudserver-inset.svg":
+/*!************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/cloudserver/cloudserver-inset.svg ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33143,14 +33143,14 @@ module.exports = __webpack_require__.p + "static/assets/cddd23aef46b112f733604ab
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/cloudlink/cloudlink.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/cloudlink/cloudlink.png ***!
-  \**************************************************************/
+/***/ "./src/lib/libraries/extensions/cloudserver/cloudserver.svg":
+/*!******************************************************************!*\
+  !*** ./src/lib/libraries/extensions/cloudserver/cloudserver.svg ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/711b88b97888739ed7e6dc2e1e4c164a.png";
+module.exports = __webpack_require__.p + "static/assets/fd3bbe7542ec2a9d179f07a6c0700a36.svg";
 
 /***/ }),
 
@@ -33305,10 +33305,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tw_tw_svg__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_tw_tw_svg__WEBPACK_IMPORTED_MODULE_31__);
 /* harmony import */ var _json_json_svg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./json/json.svg */ "./src/lib/libraries/extensions/json/json.svg");
 /* harmony import */ var _json_json_svg__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_json_json_svg__WEBPACK_IMPORTED_MODULE_32__);
-/* harmony import */ var _cloudlink_cloudlink_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./cloudlink/cloudlink.png */ "./src/lib/libraries/extensions/cloudlink/cloudlink.png");
-/* harmony import */ var _cloudlink_cloudlink_png__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_cloudlink_cloudlink_png__WEBPACK_IMPORTED_MODULE_33__);
-/* harmony import */ var _cloudlink_cloudlink_inset_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./cloudlink/cloudlink-inset.svg */ "./src/lib/libraries/extensions/cloudlink/cloudlink-inset.svg");
-/* harmony import */ var _cloudlink_cloudlink_inset_svg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_cloudlink_cloudlink_inset_svg__WEBPACK_IMPORTED_MODULE_34__);
+/* harmony import */ var _cloudserver_cloudserver_svg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./cloudserver/cloudserver.svg */ "./src/lib/libraries/extensions/cloudserver/cloudserver.svg");
+/* harmony import */ var _cloudserver_cloudserver_svg__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_cloudserver_cloudserver_svg__WEBPACK_IMPORTED_MODULE_33__);
+/* harmony import */ var _cloudserver_cloudserver_inset_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./cloudserver/cloudserver-inset.svg */ "./src/lib/libraries/extensions/cloudserver/cloudserver-inset.svg");
+/* harmony import */ var _cloudserver_cloudserver_inset_svg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_cloudserver_cloudserver_inset_svg__WEBPACK_IMPORTED_MODULE_34__);
 /* harmony import */ var _browser_ada_png__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./browser/ada.png */ "./src/lib/libraries/extensions/browser/ada.png");
 /* harmony import */ var _browser_ada_png__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_browser_ada_png__WEBPACK_IMPORTED_MODULE_35__);
 /* harmony import */ var _browser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./browser/ada-icon.svg */ "./src/lib/libraries/extensions/browser/ada-icon.svg");
@@ -33353,6 +33353,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const testIconURL = 'https://www.montessoribymom.com/wp-content/uploads/2014/08/AB-Rack.jpg'; // https://www.montessoribymom.com/store/products/test-tube-rack-wooden/
+
 
 
 
@@ -33380,16 +33382,16 @@ const discordInsetIcon = 'https://pbs.twimg.com/profile_images/13928645116698542
   internetConnectionRequired: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "CloudLink",
+    defaultMessage: "CloudServer",
     id: "gui.cloudlinkExtension.name"
   }),
-  extensionId: 'cloudlink',
+  extensionId: 'cloudserver',
   collaborator: 'MikeDEV',
-  iconURL: _cloudlink_cloudlink_png__WEBPACK_IMPORTED_MODULE_33___default.a,
-  insetIconURL: _cloudlink_cloudlink_inset_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
+  iconURL: _cloudserver_cloudserver_svg__WEBPACK_IMPORTED_MODULE_33___default.a,
+  insetIconURL: _cloudserver_cloudserver_inset_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "A powerful WebSocket extension. Not compatible with Scratch.",
-    id: "gui.cloudlinkExtension.description"
+    defaultMessage: "A powerful WebSocket extension. Forked from MikeDEV's CloudLink extension. Not compatible with Scratch.",
+    id: "gui.cloudserverExtension.description"
   }),
   featured: true,
   internetConnectionRequired: true
@@ -33628,6 +33630,18 @@ const discordInsetIcon = 'https://pbs.twimg.com/profile_images/13928645116698542
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Helpful new blocks. Not compatible with Scratch.",
     id: "tw.twExtension.description"
+  }),
+  featured: true
+}, {
+  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Test Extension",
+    id: "tw.testExtension.name"
+  }),
+  extensionId: 'test',
+  iconURL: testIconURL,
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Not used for development. Not compatible with Scratch.",
+    id: "tw.testExtension.description"
   }),
   featured: true
 }, {
