@@ -14573,8 +14573,8 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_8__["defineMessages"
 
 class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   shouldComponentUpdate(nextProps) {
-    return this.props.rotationStyle !== nextProps.rotationStyle || this.props.disabled !== nextProps.disabled || this.props.name !== nextProps.name || this.props.stageSize !== nextProps.stageSize || this.props.visible !== nextProps.visible || // Only update these if rounded value has changed
-    Math.round(this.props.direction) !== Math.round(nextProps.direction) || Math.round(this.props.size) !== Math.round(nextProps.size) || Math.round(this.props.x) !== Math.round(nextProps.x) || Math.round(this.props.y) !== Math.round(nextProps.y);
+    return this.props.rotationStyle !== nextProps.rotationStyle || this.props.disabled !== nextProps.disabled || this.props.name !== nextProps.name || this.props.stageSize !== nextProps.stageSize || this.props.visible !== nextProps.visible || // Only update these if value has changed
+    Math.round(this.props.direction) !== Math.round(nextProps.direction) || Math.round(this.props.size) !== Math.round(this.props.size) || parseFloat(this.props.x.toFixed(2)) !== parseFloat(nextProps.x.toFixed(2)) || parseFloat(this.props.y.toFixed(2)) !== parseFloat(nextProps.y.toFixed(2));
   }
 
   render() {
@@ -14621,7 +14621,7 @@ class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component 
       placeholder: "x",
       tabIndex: "0",
       type: "text",
-      value: this.props.disabled ? '' : this.props.x.toFixed(2),
+      value: this.props.disabled ? 'NaN' : parseFloat(this.props.x.toFixed(2)),
       onSubmit: this.props.onChangeX
     })));
     const yPosition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
@@ -14640,7 +14640,7 @@ class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component 
       placeholder: "y",
       tabIndex: "0",
       type: "text",
-      value: this.props.disabled ? '' : this.props.y.toFixed(2),
+      value: this.props.disabled ? 'NaN' : parseFloat(this.props.y.toFixed(2)),
       onSubmit: this.props.onChangeY
     })));
 
@@ -14706,9 +14706,9 @@ class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component 
       small: true,
       disabled: this.props.disabled,
       label: sizeLabel,
-      tabIndex: "0",
+      tabIndex: "1",
       type: "text",
-      value: this.props.disabled ? '' : Math.round(this.props.size),
+      value: this.props.disabled ? 'NaN' : Math.round(this.props.size),
       onSubmit: this.props.onChangeSize
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.group, _sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.largerInput)
@@ -15125,7 +15125,7 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_2__["defineMessages"
   },
   addSpriteFromSurprise: {
     "id": "gui.spriteSelector.addSpriteFromSurprise",
-    "defaultMessage": "Surprise"
+    "defaultMessage": "Random"
   },
   addSpriteFromFile: {
     "id": "gui.spriteSelector.addSpriteFromFile",
@@ -33418,11 +33418,25 @@ const discordInsetIcon = 'https://pbs.twimg.com/profile_images/13928645116698542
   iconURL: discordIcon,
   insetIconURL: discordInsetIcon,
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "An extension to help use discord bots. Not compatible with Scratch. DO NOT USE! EXPERIMENTAL!",
+    defaultMessage: "An extension to help use discord bots. Not compatible with Scratch. DO NOT USE, WIP! EXPERIMENTAL!",
     id: "gui.discordBotExtension.description"
   }),
   featured: true,
   internetConnectionRequired: true
+}, {
+  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Perlin Noise",
+    id: "gui.perlinNoise.name"
+  }),
+  extensionId: 'noise',
+
+  /*iconURL: ,
+  insetIconURL: ,*/
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Use perlin noise in scratch. Not compatible with Scratch. DO NOT USE, WIP!",
+    id: "gui.perlinNoise.description"
+  }),
+  featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Pen",
