@@ -1,0 +1,41 @@
+/* Navigation Bar Styles */
+.navbar {
+    list-style-type: none;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: var(--navbar-color);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.navbar li {
+    display: inline;
+    float: left;
+    background-color: var(--navbar-button-color);
+    border-color: transparent;
+}
+.navbar .active {
+    background-color: black;
+}
+.navbar li a {
+    display: block;
+    margin: 10px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+}
+.navbar li:hover {
+    background-color: var(--button-hover-color);
+}
+.navbar li:last-child {
+    float: right;
+    border-radius: 0.7rem 0 0 0.7rem;
+}
+.navbar li:nth-child(5) {
+    border-radius: 0 0.7rem 0.7rem 0;
+}
