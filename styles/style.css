@@ -1,0 +1,28 @@
+/* COLOR PALETTE *
+--primary-color
+--secondary-color
+--background-color
+--text-color
+--header-color
+--navbar-color
+--navbar-button-color
+--button-color
+--button-hover-color
+--hyperlink-color
+*/
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow: auto scroll;
+    margin: 0;
+    font-family: var(--font);
+}
+h1 {
+    color: var(--header-color);
+}
+
+.center {
+    text-align: center;
+    text-align: -webkit-center;
+}

@@ -1,0 +1,16 @@
+body {
+    /* Website Color Theme */
+    --primary-color: #acd7ec;
+    --secondary-color: #d6edff;
+    --background-color: #192a51;
+    --text-color: #ffffff;
+    --header-color: #d8dbe2;
+    --navbar-color: #4b36ce51;
+    --navbar-button-color: #6a5acd;
+    --button-color: #8b95c9;
+    --button-hover-color: #4059ad;
+    --hyperlink-color: #8a2be2;
+    
+    /* Font Family */
+    --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
