@@ -1,0 +1,25 @@
+{
+    "scratch": [
+        {
+            "type": "img",
+            "scr": "./images/image.png",
+            "alt": "no image",
+            "link": "./"
+        }
+    ],
+    "turbowarp": [
+        
+    ],
+    "adacraft": [
+        
+    ],
+    "gamelab": [
+        
+    ],
+    "html5": [
+        
+    ],
+    "unity": [
+        
+    ]
+}
