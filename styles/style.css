@@ -21,6 +21,16 @@ body {
 h1 {
     color: var(--header-color);
 }
+a {
+    color: var(--hyperlink-color);
+    margin: 5px;
+    text-decoration: none;
+    font-size: larger;
+}
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 .center {
     text-align: center;
