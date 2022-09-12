@@ -1,0 +1,151 @@
+body {
+    background-color: maroon;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.highlight-text:hover {
+    color: black;
+    -webkit-transition: .1s;
+    transition: color .1s;
+}
+button:hover {
+    background-color: whitesmoke;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: opacity 1s;
+}
+button {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 10px;
+    width: 420px;
+    height: 100px;
+    margin: 30px;
+    opacity: .7;
+}
+
+#title {
+    font-size: 60px;
+    color: mediumblue;
+    -webkit-transition: .3s;
+    transition: color .3s;
+}
+#title:hover {
+    color: blue;
+}
+.text, .highlight-text {
+    color: cornsilk;
+    font-size: 45px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.highlight-text {
+    width: 100%;
+    height: 81%;
+    margin-top: 5%;
+}
+
+/*SideBar*/
+#sideBar {
+    height: 650px;
+    width: 600px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+
+#cheatArea {
+    padding: 7px;
+}
+#inputText {
+    background-color: brown;
+    border: transparent;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: fantasy;
+    color: darkred;
+    text-align: center;
+    margin: 23px;
+}
+#submitButton:hover {
+    background-color: blue;
+}
+#submitButton {
+    background-color: mediumblue;
+    border: transparent;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+    color: midnightblue;
+    text-align: center;
+    margin: 0px;
+    -webkit-transition: .2s;
+    transition: background-color .2s;
+}
+
+#howToArea {
+    display: initial;
+    height: 40%;
+}
+
+.howTo {
+    width: 100%;
+    color: ivory;
+}
+.sliderContainer {
+    width: 100%;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    height: 25px;
+    background: whitesmoke;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 6px;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: blue;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: blue;
+    cursor: pointer;
+    border-radius: 3px;
+}
+select, option {
+    margin: 18px;
+    width: 50%;
+    text-align: center;
+    height: 25px;
+    background: whitesmoke;
+    outline: none;
+    opacity: 0.9;
+    border-radius: 20px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    color: mediumblue;
+    font-weight: bolder;
+    font-size: 15px;
+}
+select:hover {
+    opacity: 1;
+}

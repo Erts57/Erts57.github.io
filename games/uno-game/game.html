@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>UNO - Singleplayer</title>
+    
+    <link rel="icon" type="image/x-icon" href="./Images/unocard.png">
+    
+    <link rel="stylesheet" href="game_style.css">
+</head>
+<body>
+    <center id="centered">
+        <span id="gameOver" class="text">YOU LOST!</span>
+        <span id ="win" class="text">YOU WON!</span>
+    </center>
+    <div id="drawDeck">
+        <button id="drawingDeck" class="cards" onclick="clickedCard(0)"><img id="card0Image" class="cardImage" src="Images/unocard.png"></button>
+        <button id="currentCard" class="cards"><img id="card13Image" class="cardImage" src="Images/blank.png"></button>
+    </div>
+    <div id="deck">
+        <button id="card1" class="cards" onclick="clickedCard(1)"><img id="card1Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card2" class="cards" onclick="clickedCard(2)"><img id="card2Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card3" class="cards" onclick="clickedCard(3)"><img id="card3Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card4" class="cards" onclick="clickedCard(4)"><img id="card4Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card5" class="cards" onclick="clickedCard(5)"><img id="card5Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card6" class="cards" onclick="clickedCard(6)"><img id="card6Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card7" class="cards" onclick="clickedCard(7)"><img id="card7Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card8" class="cards" onclick="clickedCard(8)"><img id="card8Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card9" class="cards" onclick="clickedCard(9)"><img id="card9Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card10" class="cards" onclick="clickedCard(10)"><img id="card10Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card11" class="cards" onclick="clickedCard(11)"><img id="card11Image" class="cardImage" src="Images/blank.png"></button>
+        <button id="card12" class="cards" onclick="clickedCard(12)"><img id="card12Image" class="cardImage" src="Images/blank.png"></button>
+    </div>
+    
+    <script src="uno_lib.js"></script>
+    <script src="main_game.js"></script>
+    <script src="update.js"></script>
+</body>
+</html>
