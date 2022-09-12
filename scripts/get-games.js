@@ -8,24 +8,37 @@ function putGameCards() {
     const e = document.getElementById("html5-area");
     const f = document.getElementById("unity-area");
     
-    // ! LEFT OFF WORKING HERE !
+    const gameTypes = {
+        types: [
+            'scratch',
+            'turbowarp',
+            'adacraft',
+            'gamelab',
+            'html5',
+            'unity'
+        ],
+        elements: [
+            a, b, c, d, e, f // This seems weird but it works
+        ]
+    };
     
-    if (games['scratch'].length > 0) {
-        a.children[0].remove();
-        games['scratch'].forEach((i) => {
-            var anchor = document.createElement("a");
-            var image = document.createElement(i.type);
-            anchor.href = i.link;
-            image.src = i.src;
-            image.alt = i.alt;
-            image.style.width = "300px";
-            image.style.height = "260px";
-            anchor.appendChild(image);
-            a.appendChild(anchor);
+    gameTypes.types.forEach((o) => {
+        if (games[o].length > 0) {
+            gameTypes.elements[gameTypes.types.indexOf(o)].children[0].remove();
+            games[o].forEach((i) => {
+                var anchor = document.createElement("a");
+                var image = document.createElement(i.type);
+                anchor.href = i.link;
+                image.src = i.src;
+                image.alt = i.alt;
+                anchor.appendChild(image);
+                gameTypes.elements[gameTypes.types.indexOf(o)].appendChild(anchor);
+                
+            });
             
-        });
-        
-    }
+        }
+    });
+    
 }
 
 putGameCards();

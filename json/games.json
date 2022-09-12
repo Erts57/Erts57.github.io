@@ -1,11 +1,6 @@
 {
     "scratch": [
-        {
-            "type": "img",
-            "scr": "./images/image.png",
-            "alt": "no image",
-            "link": "./"
-        }
+        
     ],
     "turbowarp": [
         
@@ -17,9 +12,43 @@
         
     ],
     "html5": [
-        
+        {
+            "type": "img",
+            "src": "./images/coin-clicker.png",
+            "alt": "Coin Clicker",
+            "link": "https://coinclicker.w3spaces.com/"
+        },
+        {
+            "type": "img",
+            "src": "./images/uno-game.png",
+            "alt": "UNO Game",
+            "link": "./uno-game/"
+        },
+        {
+            "type": "img",
+            "src": "./images/star-clicker.png",
+            "alt": "Star Clicker",
+            "link": "./star-clicker/"
+        },
+        {
+            "type": "img",
+            "src": "./images/fighter-game.png",
+            "alt": "Fighter Game [BETA]",
+            "link": "./fighter-game/"
+        },
+        {
+            "type": "img",
+            "src": "./images/tic-tac-toe.png",
+            "alt": "Tic Tac Toe [BETA]",
+            "link": "./tic-tac-toe/"
+        }
     ],
     "unity": [
-        
+        {
+            "type": "img",
+            "src": "./images/image.png",
+            "alt": "Physics the Sandbox",
+            "link": "./physics-the-sandbox/"
+        }
     ]
 }
