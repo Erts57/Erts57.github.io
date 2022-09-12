@@ -1,0 +1,57 @@
+#playerImg, #enemyImg, #place-holder {
+    max-width: 200px;
+    max-height: 200px;
+}
+#attackButton {
+    min-width: 500px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 2px;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#playerHealth, #enemyHealth {
+    background: linear-gradient(to right, limegreen 0%, limegreen 100%);
+    border: none;
+    border-radius: 5px;
+    height: 12px;
+    width: 200px;
+    outline: none;
+    transition: background 450ms ease;
+    -webkit-appearance: none;
+    overflow: hidden;
+}
+#enemyHealth {
+    transition: opacity 500ms ease;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent !important;
+    visibility: hidden;
+    width: 10%;
+    opacity: 0;
+}
+div {
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
