@@ -1,0 +1,140 @@
+<!Doctype html>
+
+<!--Created by Erts57-->
+
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="icon" type="image/png" href="Images/star.png" sizes="16x16">
+
+        <script src="script.js" type="text/javascript"></script>
+        <script src="update-script.js" type="text/javascript"></script>
+
+        <title>Star Clicker</title>
+
+    </head>
+
+    <body>
+
+        <div class="topnav" id="topnav">
+
+            <span id="starAmount" class="text">TEXT</span>
+            <span id="clickAmount" class="text">TEXT</span>
+            <span id="workerAmount" class="text">TEXT</span>
+
+            <input type="text" name="CheatCode?" maxlength="10" placeholder="Cheat Code" id="cheatCode" class="text"></input>
+
+            <button id="shopButton" onclick="toggleShop()">Open Shop</button>
+
+            <a href="javascript:void(0);" class="icon" onclick="toggleTopnav()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+        <br>
+
+        <div id="game">
+
+            <center>
+
+                <img id="star" src="Images/star.png" onclick="clickStar()">
+                <br>
+
+            </center>
+        </div>
+
+        <div id="shop">
+
+            <table>
+
+                <th class="text">Clicks</th>
+                <tr id="row1">
+                    <td>
+                        <button id="shopItem1" class="shopButton tooltip" onclick="buyItem(1)">
+                            <img class="shopItemImage" src="Images/bordered-star.png"><br>
+                            <span id="shopPrice1" class="text">$COST</span>
+                            <span class="tooltiptext">Increase Click</span>
+                        </button>
+                    </td>
+                    <td>
+                        <button id="shopItem2" class="shopButton tooltip" onclick="buyItem(2)">
+                            <img class="shopItemImage" src="Images/many-stars.png"><br>
+                            <span id="shopPrice2" class="text">$COST</span>
+                            <span class="tooltiptext">Better Increase Click</span>
+                        </button>
+                    </td>
+                    <td>
+                        <button id="shopItem3" class="shopButton tooltip" onclick="buyItem(3)">
+                            <img class="shopItemImage" src="Images/golden_star.png"><br>
+                            <span id="shopPrice3" class="text">$COST</span>
+                            <span class="tooltiptext">Increase Click by a Lot</span>
+                        </button>
+                    </td>
+                </tr>
+
+                <th class="text">Workers</th>
+                <tr id="row2">
+                    <td>
+                        <button id="shopItem4" class="shopButton tooltip" onclick="buyItem(4)">
+                            <img class="shopItemImage" id="Invert" src="Images/worker.png"><br>
+                            <span id="shopPrice4" class="text">$COST</span>
+                            <span class="tooltiptext">Buy Worker</span>
+                        </button>
+                    </td>
+                    <td>
+                        <button id="shopItem5" class="shopButton tooltip" onclick="buyItem(5)">
+                            <img class="shopItemImage" id="Invert" src="Images/many-people.png"><br>
+                            <span id="shopPrice5" class="text">$COST</span>
+                            <span class="tooltiptext">Buy Many Workers</span>
+                        </button>
+                    </td>
+                    <td>
+                        <button id="shopItem6" class="shopButton tooltip" onclick="buyItem(6)">
+                            <img class="shopItemImage" id="Invert" src="Images/efficiency.png"><br>
+                            <span id="shopPrice6" class="text">$COST</span>
+                            <span class="tooltiptext">Increase Worker Efficiency</span>
+                        </button>
+                    </td>
+                </tr>
+
+                <th class="text">Other</th>
+                <tr id="row3">
+                    <td>
+                        <button id="shopItem7" class="shopButton tooltip" onclick="buyItem(7)">
+                            <img class="shopItemImage" src="Images/gold-coins.png"><br>
+                            <span id="shopPrice7" class="text">$COST</span>
+                            <span class="tooltiptext">Increase Golden Click Chance</span>
+                        </button>
+                    </td>
+                    <td>
+                        <button id="shopItem8" class="shopButton tooltip" onclick="buyItem(8)">
+                            <img class="shopItemImage" src="Images/diamond.png"><br>
+                            <span id="shopPrice8" class="text">$COST</span>
+                            <span class="tooltiptext">Increase Golden Worker Mine Chance</span>
+                        </button>
+                    </td>
+                    <td>
+                        <button id="shopItem9" class="shopButton tooltip" onclick="buyItem(9)">
+                            <img class="shopItemImage" id="Invert" src="Images/mystery.png"><br>
+                            <span id="shopPrice9" class="text">$COST</span>
+                            <span class="tooltiptext">???</span>
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+
+            <span id="gcc" class="text">TEXT</span>
+            <span id="gwmc" class="text">TEXT</span>
+
+        </div>
+
+    </body>
+
+</html>
