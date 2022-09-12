@@ -31,6 +31,19 @@ p {
     margin-left: 10px;
     margin-right: 10px;
 }
+img {
+    border: transparent;
+    border-radius: 0.7rem;
+    padding: 5px;
+    max-width: 32%;
+    height: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5);
+}
 
 .center {
     text-align: center;
