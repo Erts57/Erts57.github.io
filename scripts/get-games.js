@@ -1,4 +1,4 @@
-import games from '../json/games.json' assert { "type": "json" };
+import games from "../json/games.json" assert { "type": "json" };
 
 function putGameCards() {
     const a = document.getElementById("scratch-area");
@@ -7,21 +7,26 @@ function putGameCards() {
     const d = document.getElementById("gamelab-area");
     const e = document.getElementById("html5-area");
     const f = document.getElementById("unity-area");
-    
+
     const gameTypes = {
         types: [
-            'scratch',
-            'turbowarp',
-            'adacraft',
-            'gamelab',
-            'html5',
-            'unity'
+            "scratch",
+            "turbowarp",
+            "adacraft",
+            "gamelab",
+            "html5",
+            "unity"
         ],
-        elements: [
-            a, b, c, d, e, f // This seems weird but it works
+        elements: [ // This seems weird but it works
+            a,
+            b,
+            c,
+            d,
+            e,
+            f
         ]
     };
-    
+
     gameTypes.types.forEach((o) => {
         if (games[o].length > 0) {
             gameTypes.elements[gameTypes.types.indexOf(o)].children[0].remove();
@@ -32,13 +37,12 @@ function putGameCards() {
                 image.src = i.src;
                 image.alt = i.alt;
                 anchor.appendChild(image);
-                gameTypes.elements[gameTypes.types.indexOf(o)].appendChild(anchor);
-                
+                gameTypes.elements[gameTypes.types.indexOf(o)].appendChild(
+                    anchor
+                );
             });
-            
         }
     });
-    
 }
 
 putGameCards();
