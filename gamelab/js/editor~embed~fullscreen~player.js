@@ -6893,12 +6893,12 @@ const CustomProcedures = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1_
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionTitle
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
-  defaultMessage: "Add an input",
+  defaultMessage: "Add a parameter",
   id: "gui.customProcedures.addAnInputNumberText"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionDescription
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
-  defaultMessage: "number or text",
+  defaultMessage: "number or string",
   id: "gui.customProcedures.numberTextType"
 }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionCard,
@@ -6911,7 +6911,7 @@ const CustomProcedures = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1_
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionTitle
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
-  defaultMessage: "Add an input",
+  defaultMessage: "Add a parameter",
   id: "gui.customProcedures.addAnInputBoolean"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionDescription
@@ -6938,7 +6938,7 @@ const CustomProcedures = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1_
   type: "checkbox",
   onChange: props.onToggleWarp
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
-  defaultMessage: "Run without screen refresh",
+  defaultMessage: "Tick to run without screen refresh",
   id: "gui.customProcedures.runWithoutScreenRefresh"
 }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
   className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.buttonRow
@@ -11025,7 +11025,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_36___default.a.feedbackButton
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
-      defaultMessage: "GameMaker Feedback",
+      defaultMessage: "GameLab Feedback",
       id: "tw.feedbackButton"
     }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_36___default.a.accountInfoGroup
@@ -32938,6 +32938,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tag-messages.js */ "./src/lib/libraries/tag-messages.js");
 
 /* harmony default export */ __webpack_exports__["default"] = ([{
+  tag: 'gamelab',
+  intlLabel: _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__["default"].gamelab
+}, {
   tag: 'fantasy',
   intlLabel: _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__["default"].fantasy
 }, {
@@ -33425,16 +33428,16 @@ const discordInsetIcon = 'https://pbs.twimg.com/profile_images/13928645116698542
   internetConnectionRequired: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Perlin Noise",
-    id: "gui.perlinNoise.name"
+    defaultMessage: "p5.js",
+    id: "gui.p5.name"
   }),
-  extensionId: 'noise',
+  extensionId: 'p5',
 
   /*iconURL: ,
   insetIconURL: ,*/
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Use perlin noise in scratch. Not compatible with Scratch. DO NOT USE, WIP!",
-    id: "gui.perlinNoise.description"
+    defaultMessage: "Noise Generation using the p5.js library. Not compatible with Scratch.",
+    id: "gui.p5.description"
   }),
   featured: true
 }, {
@@ -33503,6 +33506,19 @@ const discordInsetIcon = 'https://pbs.twimg.com/profile_images/13928645116698542
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "New blocks to help manipulate JSON in Scratch. Not compatible with Scratch.",
     id: "tw.jsonExtension.description"
+  }),
+  featured: true
+}, {
+  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Ciphers",
+    id: "tw.ciphersExtension.name"
+  }),
+  extensionId: 'ciphers',
+
+  /*iconURL: ,*/
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Helpful blocks to encode and decode text using many ciphers. Not compatible with Scratch. EXPERIMENTAL!",
+    id: "tw.ciphersExtension.description"
   }),
   featured: true
 }, {
@@ -33917,6 +33933,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tag-messages.js */ "./src/lib/libraries/tag-messages.js");
 
 /* harmony default export */ __webpack_exports__["default"] = ([{
+  tag: 'gamelab',
+  intlLabel: _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__["default"].gamelab
+}, {
   tag: 'animals',
   intlLabel: _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__["default"].animals
 }, {
@@ -33959,6 +33978,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tag-messages.js */ "./src/lib/libraries/tag-messages.js");
 
 /* harmony default export */ __webpack_exports__["default"] = ([{
+  tag: 'gamelab',
+  intlLabel: _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__["default"].gamelab
+}, {
   tag: 'animals',
   intlLabel: _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__["default"].animals
 }, {
@@ -34004,6 +34026,10 @@ __webpack_require__.r(__webpack_exports__);
   all: {
     "id": "gui.libraryTags.all",
     "defaultMessage": "All"
+  },
+  gamelab: {
+    "id": "gui.libraryTags.gamelab",
+    "defaultMessage": "GameLab"
   },
   animals: {
     "id": "gui.libraryTags.animals",
@@ -34117,6 +34143,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tag-messages.js */ "./src/lib/libraries/tag-messages.js");
 
 /* harmony default export */ __webpack_exports__["default"] = ([{
+  tag: 'gamelab',
+  intlLabel: _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__["default"].gamelab
+}, {
   tag: 'animation',
   intlLabel: _tag_messages_js__WEBPACK_IMPORTED_MODULE_0__["default"].animation
 }, {
