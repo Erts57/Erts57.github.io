@@ -17476,7 +17476,7 @@ const StoreProjectOptions = ({
   id: "tw.settingsModal.storeProjectOptions"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"] // eslint-disable-next-line max-len
 , {
-  defaultMessage: "Stores the selected settings in the project so they will be automatically applied when GameMaker loads this project. Warp timer and disable compiler will not be saved.",
+  defaultMessage: "Stores the selected settings in the project so they will be automatically applied when GameLab loads this project. Warp timer and disable compiler will not be saved.",
   id: "tw.settingsModal.storeProjectOptionsHelp"
 }))));
 
@@ -34403,7 +34403,7 @@ const myBlocks = function myBlocks() {
 }; // eslint-disable-next-line max-len
 
 
-const extraTurboWarpBlocks = "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is GameMaker?</field></block>\n";
+const extraTurboWarpBlocks = "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is GameLab?</field></block>\n";
 /* eslint-enable no-unused-vars */
 
 const xmlOpen = '<xml style="display: none">';
